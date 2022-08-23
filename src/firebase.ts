@@ -6,12 +6,12 @@ import { getStorage } from "firebase/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDyaf-1Z4rUVCecR8Na4YTMr6I5yvtLA28",
-  authDomain: "image-uploader-ec292.firebaseapp.com",
-  projectId: "image-uploader-ec292",
-  storageBucket: "image-uploader-ec292.appspot.com",
-  messagingSenderId: "496069028996",
-  appId: "1:496069028996:web:ecefb23a44ecf3461ba6d1",
+  apiKey: import.meta.env.REACT_APP_FIREBASE_APIKEY,
+  authDomain: import.meta.env.REACT_APP_FIREBASE_DOMAIN,
+  projectId: import.meta.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.REACT_APP_FIREBASE_SENDER_ID,
+  appId: import.meta.env.REACT_APP_FIREBASE_APP_ID,
 };
 
 // Initialize Firebase

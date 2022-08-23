@@ -12,6 +12,7 @@ const ImageUploader = () => {
   const [progress, setProgress] = useState<number>(0);
 
   const OnFileUploadToFirebase = (e: ChangeEvent<HTMLInputElement>) => {
+    console.log("click");
     const file = (e.target.files as FileList)[0];
     const storageRef = ref(storage, "image/" + file.name);
     // uploadBytes(storageRef, file).then((snapshot) => {
